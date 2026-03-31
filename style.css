@@ -95,6 +95,13 @@ ul {
     color: var(--accent-color);
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-main);
+}
+
 .hero {
     min-height: calc(100vh - 80px);
     max-width: 1200px;
@@ -224,7 +231,15 @@ ul {
 .skill-icon {
     font-size: 3rem;
     color: var(--text-main);
+    transition: color var(--transition-fast);
 }
+
+.skill-card:hover .fa-html5 { color: #e34c26; }
+.skill-card:hover .fa-css3-alt { color: #264de4; }
+.skill-card:hover .fa-js { color: #f7df1e; }
+.skill-card:hover .fa-react { color: #61dafb; }
+.skill-card:hover .fa-git-alt { color: #f05032; }
+.skill-card:hover .fa-node-js { color: #339933; }
 
 .skill-name {
     font-size: 0.875rem;
@@ -463,8 +478,30 @@ ul {
 @media (max-width: 768px) {
     .nav-links {
         display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: var(--bg-color);
+        padding: 2rem;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     }
     
+    .nav-links.active {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .nav-links li {
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
     .hero {
         flex-direction: column-reverse;
         text-align: center;
