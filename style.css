@@ -1,0 +1,66 @@
+:root {
+    --bg-color: #ffffff;          
+    --text-main: #111827;         
+    --text-muted: #6b7280;        
+    --border-color: #e5e7eb;      
+    
+    --accent-color: #000000;      
+    --hover-bg: #f9fafb;          
+
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6; 
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.welcome-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.welcome-screen h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.welcome-screen p {
+    color: var(--text-muted);
+    font-size: 1.125rem;
+    max-width: 60ch;
+    margin: 0 auto 0.5rem;
+}
