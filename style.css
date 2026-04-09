@@ -328,17 +328,6 @@ ul {
     box-shadow: 0 12px 24px rgba(0,0,0,0.06);
 }
 
-.project-image {
-    height: 200px;
-    background-color: var(--hover-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    font-size: 0.875rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
 .project-info {
     padding: 2rem;
     display: flex;
