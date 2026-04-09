@@ -389,14 +389,14 @@ ul {
     text-decoration: underline;
 }
 
-.contact-wrapper {
-    display: flex;
-    gap: 4rem;
-    max-width: 1000px;
+.contact .section-title {
+    text-align: center;
 }
 
-.contact-info {
-    flex: 1;
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .contact-info h3 {
@@ -414,8 +414,10 @@ ul {
 
 .contact-socials {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .contact-socials a {
@@ -437,47 +439,6 @@ ul {
     color: var(--accent-color);
 }
 
-.contact-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group label {
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.875rem 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    font-family: var(--font-sans);
-    font-size: 1rem;
-    color: var(--text-main);
-    background-color: var(--bg-color);
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
 
 .footer {
     text-align: center;
@@ -531,10 +492,6 @@ ul {
         text-align: center;
         padding: 2rem;
         padding-top: 4rem;
-    }
-    
-    .contact-wrapper {
-        flex-direction: column;
     }
     
     .name {
