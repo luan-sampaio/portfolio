@@ -7,7 +7,7 @@
 
 Portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puros, sem frameworks ou dependências de build. O objetivo foi construir uma página rápida, responsiva e com identidade visual limpa, que apresente projetos, experiências e formas de contato de maneira direta.
 
-🔗 **[Ver online](https://luan-sampaio.vercel.app)**
+🔗 **[Ver online](https://luan.sampaio.vercel.app)**
 
 ---
 
