@@ -18,155 +18,244 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="logo">L.S.</a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#tecnologias">Tecnologias</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <div class="menu-toggle" id="mobile-menu">
+            <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Abrir menu de navegação" aria-controls="nav-links" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </button>
         </nav>
     </header>
 
     <main>
-        <section class="hero fade-in">
+        <section class="hero fade-in" id="sobre">
             <div class="hero-content">
                 <h1 class="name">Luan Sampaio</h1>
                 <h2 class="role">Desenvolvedor Full Stack</h2>
-                <p class="summary">Desenvolvedor Full Stack (Web e Mobile) com vivência prática em Quality Assurance (QA). Foco em construir e testar aplicações robustas de ponta a ponta.</p>
-                <a href="#contato" class="btn">Vamos conversar</a>
+                <p class="summary">Desenvolvo aplicações web, mobile e APIs com foco em confiabilidade, clareza de arquitetura e experiência de uso. Minha vivência com automação de testes fortalece minha entrega: escrevo código pensando em manutenção, regras de negócio e estabilidade desde o início.</p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn">Ver projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Contato</a>
+                </div>
+                <dl class="hero-highlights" aria-label="Destaques profissionais">
+                    <div>
+                        <dt>Foco</dt>
+                        <dd>Produto estável</dd>
+                    </div>
+                    <div>
+                        <dt>Diferencial</dt>
+                        <dd>Testabilidade</dd>
+                    </div>
+                    <div>
+                        <dt>Entrega</dt>
+                        <dd>Web, Mobile e APIs</dd>
+                    </div>
+                </dl>
             </div>
             <div class="hero-image">
                 <div class="photo-placeholder">
-                    <img src="images/foto_perfil.jpeg">
+                    <img src="images/foto_perfil.jpeg" alt="Foto de perfil de Luan Sampaio">
                 </div>
             </div>
         </section>
 
-        <section class="section about fade-in" id="sobre">
-            <h2 class="section-title">Sobre mim</h2>
-            <p class="section-text">
-                Desenvolvedor focado em engenharia de software de ponta a ponta. Tenho experiência na construção de aplicações Web, Mobile e na arquitetura de APIs. Combino essa base de desenvolvimento com uma cultura forte de Quality Assurance (QA) para garantir que o produto final entregue valor ao usuário sem comprometer a estabilidade do sistema.
-            </p>
-        </section>
-
         <section class="section skills fade-in" id="tecnologias">
-            <h2 class="section-title">Tecnologias</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fa-brands fa-html5 skill-icon"></i>
-                    <span class="skill-name">HTML5</span>
+            <div class="section-heading">
+                <h2 class="section-title">Tecnologias</h2>
+                <p class="section-intro">Ferramentas que uso para construir interfaces, APIs, automações e ambientes de desenvolvimento.</p>
+            </div>
+            <div class="skills-groups">
+                <div class="skill-group">
+                    <h3>Front-end</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-html5 skill-icon"></i>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-css3-alt skill-icon"></i>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-js skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-react skill-icon"></i>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-react skill-icon react-native-icon"></i>
+                            <span class="skill-name">React Native</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-css3-alt skill-icon"></i>
-                    <span class="skill-name">CSS3</span>
+                <div class="skill-group">
+                    <h3>Back-end</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-java skill-icon"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="devicon-spring-plain skill-icon"></i>
+                            <span class="skill-name">Spring</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="devicon-fastapi-plain skill-icon"></i>
+                            <span class="skill-name">FastAPI</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="devicon-django-plain skill-icon"></i>
+                            <span class="skill-name">Django</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-js skill-icon"></i>
-                    <span class="skill-name">JavaScript</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-react skill-icon"></i>
-                    <span class="skill-name">React</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-git-alt skill-icon"></i>
-                    <span class="skill-name">Git</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-java skill-icon"></i>
-                    <span class="skill-name">Java</span>
-                </div>
-                <div class="skill-card">
-                    <i class="devicon-spring-plain skill-icon"></i>
-                    <span class="skill-name">Spring</span>
-                </div>
-                <div class="skill-card">
-                    <i class="devicon-postgresql-plain skill-icon"></i>
-                    <span class="skill-name">PostgreSQL</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-docker skill-icon"></i>
-                    <span class="skill-name">Docker</span>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-react skill-icon react-native-icon"></i>
-                    <span class="skill-name">React Native</span>
-                </div>
-                <div class="skill-card">
-                    <i class="devicon-fastapi-plain skill-icon"></i>
-                    <span class="skill-name">FastAPI</span>
-                </div>
-                <div class="skill-card">
-                    <i class="devicon-django-plain skill-icon"></i>
-                    <span class="skill-name">Django</span>
+                <div class="skill-group">
+                    <h3>Dados e DevOps</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="devicon-postgresql-plain skill-icon"></i>
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-docker skill-icon"></i>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-git-alt skill-icon"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section experience fade-in" id="experiencia">
-            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="section-heading">
+                <h2 class="section-title">Experiência Profissional</h2>
+                <p class="section-intro">Atuação prática no ciclo de qualidade, conectando validação funcional, automação e estabilidade de entrega.</p>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Analista de Quality Assurance (QA)</h3>
                         <span class="timeline-date">2025 - Presente | labCoMU</span>
-                        <p class="timeline-text">Desenvolvimento e manutenção de scripts de automação End-to-End (E2E) utilizando Playwright. Atuo na garantia de qualidade do ciclo de desenvolvimento, validando regras de negócio e prevenindo regressões no código antes do deploy em produção.</p>
+                        <p class="timeline-text">Atuo na garantia de qualidade do produto, combinando testes manuais, validação de regras de negócio e automação End-to-End com Playwright. Crio e mantenho fluxos automatizados que ajudam a prevenir regressões antes do deploy, aumentando a confiança nas entregas e aproximando qualidade do processo de desenvolvimento.</p>
+                        <ul class="timeline-list">
+                            <li>Validação manual de fluxos e regras de negócio</li>
+                            <li>Automação E2E com Playwright</li>
+                            <li>Prevenção de regressões antes do deploy</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="section education fade-in" id="formacao">
+            <div class="section-heading">
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <p class="section-intro">Base acadêmica e estudos voltados para desenvolvimento de software, qualidade e construção de aplicações.</p>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="education-info">
+                    <h3>Tecnologia da Informação</h3>
+                    <span>UFRN - Instituto Metrópole Digital (IMD) | 2024 - Presente</span>
+                    <p>Formação atual voltada para fundamentos de computação, programação, desenvolvimento de software e construção de soluções tecnológicas.</p>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="education-info">
+                    <h3>Técnico em Mecânica</h3>
+                    <span>IFRN | 2019 - 2023</span>
+                    <p>Formação técnica que contribuiu para uma base analítica, atenção a processos, resolução de problemas e disciplina na execução de projetos.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="section projects fade-in" id="projetos">
-            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="section-heading">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <p class="section-intro">Projetos que demonstram integração entre interface, backend, banco de dados e preocupação com manutenção.</p>
+            </div>
             <div class="projects-grid">
-                <article class="project-card">
+                <article class="project-card project-featured">
+                    <div class="project-visual project-visual-web">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
                     <div class="project-info">
+                        <span class="project-kicker">Full-stack</span>
                         <h3 class="project-title">Acervo Web</h3>
-                        <p class="project-desc">Aplicação full-stack para registro e acompanhamento de leitura pessoal, com paginação, filtros e painel de métricas.</p>
+                        <p class="project-desc">Sistema para organizar leituras pessoais com filtros, paginação e painel de métricas. O projeto explora fluxo completo entre interface, API, banco de dados e ambiente Docker.</p>
                         <div class="project-tags">
                             <span>React</span>
                             <span>FastAPI</span>
                             <span>PostgreSQL</span>
                             <span>Docker</span>
                         </div>
-                        <a href="https://github.com/luan-sampaio/acervo-web" class="project-link">Ver Código <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-actions">
+                            <a href="https://github.com/luan-sampaio/acervo-web" target="_blank" rel="noopener noreferrer" class="project-link">Código <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </article>
                 <article class="project-card">
+                    <div class="project-visual project-visual-mobile">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
                     <div class="project-info">
-                        <h3 class="project-title">Aplicativo Mobile</h3>
-                        <p class="project-desc">Aplicativo construído com foco na experiência fluida do usuário para plataformas iOS e Android em código unificado.</p>
+                        <span class="project-kicker">Mobile + API</span>
+                        <h3 class="project-title">Expense Tracker</h3>
+                        <p class="project-desc">Aplicativo mobile de controle financeiro com arquitetura local-first, dashboard de receitas e despesas, regra 50/30/20 e sincronização com uma API Django Ninja.</p>
                         <div class="project-tags">
                             <span>React Native</span>
-                            <span>Firebase</span>
+                            <span>Expo</span>
+                            <span>TypeScript</span>
+                            <span>Django Ninja</span>
                         </div>
-                        <a href="#" class="project-link">Ver Código <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-actions">
+                            <a href="https://github.com/luan-sampaio/expense-tracker-mobile" target="_blank" rel="noopener noreferrer" class="project-link">Mobile <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="https://github.com/luan-sampaio/expense-tracker-api" target="_blank" rel="noopener noreferrer" class="project-link">API <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </article>
                 <article class="project-card">
+                    <div class="project-visual project-visual-api">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
                     <div class="project-info">
+                        <span class="project-kicker">API REST</span>
                         <h3 class="project-title">Movie Reservation API</h3>
-                        <p class="project-desc">API REST para gerenciamento de cinemas construída com Spring Boot. Inclui controle de sessões, autenticação JWT com RBAC e regras de negócio para evitar conflitos de agendamento.</p>
+                        <p class="project-desc">API REST para gerenciamento de cinemas com autenticação JWT, controle de permissões e validações para evitar conflitos de sessões e horários.</p>
                         <div class="project-tags">
                             <span>Spring Boot</span>
                             <span>Java</span>
                             <span>PostgreSQL</span>
                             <span>Docker</span>
                         </div>
-                        <a href="https://github.com/luan-sampaio/movie-reservation-api" target="_blank" rel="noopener noreferrer" class="project-link">Ver Código <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="project-actions">
+                            <a href="https://github.com/luan-sampaio/movie-reservation-api" target="_blank" rel="noopener noreferrer" class="project-link">Código <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
         <section class="section contact fade-in" id="contato">
-            <h2 class="section-title">Contato</h2>
+            <div class="section-heading section-heading-centered">
+                <h2 class="section-title">Contato</h2>
+            </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h3>Vamos bater um papo?</h3>
