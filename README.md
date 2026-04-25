@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-Portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puros, sem frameworks ou dependências de build. O objetivo foi construir uma página rápida, responsiva e com identidade visual limpa, que apresente projetos, experiências e formas de contato de maneira direta.
+Portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puros, sem frameworks ou dependências de build. O objetivo foi construir uma página rápida, responsiva e com identidade visual limpa, com atenção especial à leitura da primeira dobra, ao comportamento mobile e à apresentação direta de projetos, experiências e formas de contato.
 
 🔗 **[Ver online](https://luansampaio.vercel.app/)**
 
@@ -13,11 +13,11 @@ Portfólio pessoal desenvolvido do zero com HTML, CSS e JavaScript puros, sem fr
 
 ## ✨ Seções
 
-- **Hero** — Apresentação com nome, cargo e resumo profissional
-- **Sobre mim** — Descrição da trajetória e foco profissional
-- **Tecnologias** — Grid com as principais tecnologias dominadas
-- **Experiência** — Timeline com experiências profissionais
-- **Projetos** — Cards com descrição, stack utilizada e link para o código
+- **Hero** — Apresentação com nome, cargo, CTA e destaques profissionais
+- **Tecnologias** — Grid com as principais tecnologias utilizadas
+- **Experiência Profissional** — Timeline com experiências e responsabilidades
+- **Formação Acadêmica** — Resumo da trajetória acadêmica
+- **Projetos em Destaque** — Cards com descrição, stack utilizada e link para o código
 - **Contato** — Links diretos para GitHub, LinkedIn e e-mail
 
 ---
