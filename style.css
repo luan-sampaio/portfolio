@@ -884,11 +884,12 @@ ul {
     }
 
     .hero {
+        min-height: auto;
         flex-direction: column-reverse;
         text-align: center;
-        padding: 2rem;
-        padding-top: 4rem;
-        gap: 2.5rem;
+        justify-content: center;
+        padding: 1.5rem 2rem 2.5rem;
+        gap: 1.5rem;
     }
 
     .hero-actions,
@@ -1007,6 +1008,11 @@ ul {
 
     .role {
         font-size: 1.3rem;
+    }
+
+    .hero {
+        padding: 1rem 1.25rem 2rem;
+        gap: 1.25rem;
     }
 
     .hero-actions {
